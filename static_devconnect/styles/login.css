@@ -1,0 +1,52 @@
+main {
+    background-color: rgb(177, 177, 177);
+    min-height: 100vh;
+    /*Estou falando da altura da minha janela*/
+    width: 100%;
+    display: flex;
+    /*Ativei o flex*/
+    justify-content: center;
+    align-items: center;
+    /*Alinhei para o centro*/
+}
+
+/*Estou chamando a div*/
+main>div {
+    background-color: rgb(253, 250, 250);
+    width: 100%;
+    max-width: 342px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+}
+
+form{
+    /*background-color: #d1ddf0;*/
+}
+
+#secao-cadastro{
+    
+    /*background-color: #6674cf ;*/
+}
+
+.estilo-formulario{
+    background-color: var(#ecebeb);
+    border: var(--cor-cinza);
+    width: 100%;
+}
+
+main > div > p{
+    background-color: #0f2a56;
+}
+
+#secao-instalacao{
+    background-color: rgb(255, 140, 0);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}

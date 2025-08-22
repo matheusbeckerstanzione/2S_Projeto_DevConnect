@@ -1,0 +1,70 @@
+/*1 forma de utilizar a fonte*/
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');*/
+
+
+/*2 forma de utilizar a fonte*/
+
+@font-face {
+    font-family: Billabong;
+    src: url(../assets/fonts/Billabong/billabong.ttf),
+        url(../assets/fonts/Billabong/billabong_regular.otf);
+
+
+}
+
+@font-face {
+    font-family: Noto Sans;
+    src: url(../assets/fonts/Noto\ Sans/NotoSans-Italic-VariableFont_wdth,wght.ttf),
+        url(../assets/fonts/Noto\ Sans/NotoSans-VariableFont_wdth,wght.ttf);
+        
+}
+
+/*colocando as cores*/
+:root {
+
+    --cor-branco: #FFFFFF;
+    --cor-cinza: #5c5c5c;
+    --cor-preto: #141414;
+    --cor-azul-claro: #d1ddf0;
+    --cor-azul: #0d21a1;
+    --cor-azul-escuro: #011638;
+
+    /*estou falando da borda*/
+    --border: 2px solid (var(--cor-cinza));
+    --border-arredondamento: 2px;
+
+    /*tamanho da font*/
+    --tamanho-font-lg: 20px;
+    --tamanho-font-md: 16px;
+    --tamanho-font-sm: 14px;
+
+}
+
+/*Meu seletor global*/
+*{
+    padding: 0; /*espaçamento interno*/
+    margin: 0; /*espaçamento esterno*/
+    box-sizing: border-box; /*atribui espaço internos/esternos e bordas no tamanho final do box*/
+    font-family: "Noto Sans", sans-serif;
+
+}
+
+
+body{
+
+background-color: #ecebeb;
+
+}
+
+h1{
+    position: absolute; /*Altera a posição do elemento*/
+    z-index: -1; /*Camada do elemento*/
+    opacity: 0; /*Opacidade*/
+
+}
+
+
+/*div{
+    background-color: #0d21a1;
+
+}*/
