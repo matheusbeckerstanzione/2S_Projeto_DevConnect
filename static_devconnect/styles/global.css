@@ -30,7 +30,7 @@
     --cor-azul-escuro: #011638;
 
     /*estou falando da borda*/
-    --border: 2px solid (var(--cor-cinza));
+    --border: 1px solid (var(--cor-cinza));
     --border-arredondamento: 2px;
 
     /*tamanho da font*/
@@ -63,8 +63,39 @@ h1{
 
 }
 
+/*formularip*/
+.formulario-botao-azul{
+    background-color: var(--cor-azul-escuro);
+    border-radius: var(--border-arredondamento);
+    border: none;
+    height: 35px;
+
+
+    color: var(--cor-branco);
+    font-size: var(--tamanho-font-sm);
+}
+
+.formulario-campos > input{
+    border: var(--border);
+    height: 35px;
+    background-color: rgb(199, 199, 202);
+
+    color: var(--cor-preto);
+    font-size: var(--tamanho-font-sm);
+    border-radius: var(--border-arredondamento);
+}
+
+.formulario-campos > label {
+    font-size: var(--tamanho-font-sm);
+    color: var(--cor-preto);
+    font-weight: 600;
+}
+
+
+
 
 /*div{
     background-color: #0d21a1;
 
 }*/
+
