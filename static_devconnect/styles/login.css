@@ -45,7 +45,7 @@ form{
 .text1{
     text-transform: uppercase;
     font-size: var(--tamanho-fonte-sm);
-    color: var(--cor-cinza);
+    color: var(--cor-preto);
 
 }
 
@@ -80,10 +80,9 @@ form > a, #secao-cadastro > p > a {
 
 
 .estilo-formulario{
-    width: 100%;
+   
     max-width: 342px;
-    background-color: var(--cor-branco);
-    border: var(--cor-cinza);
+
   
    
   

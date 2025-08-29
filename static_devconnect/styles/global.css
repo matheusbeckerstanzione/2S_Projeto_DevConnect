@@ -16,7 +16,7 @@
     font-family: Noto Sans;
     src: url(../assets/fonts/Noto\ Sans/NotoSans-Italic-VariableFont_wdth,wght.ttf),
         url(../assets/fonts/Noto\ Sans/NotoSans-VariableFont_wdth,wght.ttf);
-        
+
 }
 
 /*colocando as cores*/
@@ -30,7 +30,7 @@
     --cor-azul-escuro: #011638;
 
     /*estou falando da borda*/
-    --border: 1px solid (var(--cor-cinza));
+    --border: 3px solid var(--cor-preto);
     --border-arredondamento: 2px;
 
     /*tamanho da font*/
@@ -41,30 +41,36 @@
 }
 
 /*Meu seletor global*/
-*{
-    padding: 0; /*espaçamento interno*/
-    margin: 0; /*espaçamento esterno*/
-    box-sizing: border-box; /*atribui espaço internos/esternos e bordas no tamanho final do box*/
+* {
+    padding: 0;
+    /*espaçamento interno*/
+    margin: 0;
+    /*espaçamento esterno*/
+    box-sizing: border-box;
+    /*atribui espaço internos/esternos e bordas no tamanho final do box*/
     font-family: "Noto Sans", sans-serif;
 
 }
 
 
-body{
+body {
 
-background-color: #ecebeb;
+    background-color: #d7d7d7;
 
 }
 
-h1{
-    position: absolute; /*Altera a posição do elemento*/
-    z-index: -1; /*Camada do elemento*/
-    opacity: 0; /*Opacidade*/
+h1 {
+    position: absolute;
+    /*Altera a posição do elemento*/
+    z-index: -1;
+    /*Camada do elemento*/
+    opacity: 0;
+    /*Opacidade*/
 
 }
 
 /*formularip*/
-.formulario-botao-azul{
+.formulario-botao-azul {
     background-color: var(--cor-azul-escuro);
     border-radius: var(--border-arredondamento);
     border: none;
@@ -75,27 +81,102 @@ h1{
     font-size: var(--tamanho-font-sm);
 }
 
-.formulario-campos > input{
+.formulario-campos>input {
     border: var(--border);
     height: 35px;
-    background-color: rgb(199, 199, 202);
+    background-color: #d7d7d7;
 
     color: var(--cor-preto);
     font-size: var(--tamanho-font-sm);
     border-radius: var(--border-arredondamento);
 }
 
-.formulario-campos > label {
+.formulario-campos>label {
     font-size: var(--tamanho-font-sm);
     color: var(--cor-preto);
     font-weight: 600;
 }
 
+.estilo-formulario{
+    width: 100%;
+  
+    background-color: var(--cor-azul-claro);
+    border: var(--border);
+  
+   
+  
+}
+
+#campo-file {
+    display: none;
+ }
+
+ #labell{
+    display: inline-block;
+    width: 200px;
+    color: var(--cor-branco);
+    background-color: var(--cor-azul-escuro);
+    text-align: center;
+    padding: 10px;
+ }
+
+#cabecalho {
+    background-color: var(--cor-azul-claro);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: var(--border);
+}
+
+#cabecalho>nav {
+
+    width: 85%;
+    max-width: 900px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#logo-mobile {
+    display: none;
+}
+
+.cabecalho-acoes {
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.cabecalho-acoes>a {
+    display: flex;
+    align-items: center;
+}
+
+#foto-perfil {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 
 
-/*div{
-    background-color: #0d21a1;
 
-}*/
+/*responsivo*/
+@media only screen and (max-width: 500px) {
+    #logo-mobile {
+        display: initial;
+    }
 
+
+    #logo-desktop {
+        display: none;
+    }
+
+}
