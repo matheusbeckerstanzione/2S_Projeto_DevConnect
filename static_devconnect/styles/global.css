@@ -49,6 +49,7 @@
     box-sizing: border-box;
     /*atribui espaço internos/esternos e bordas no tamanho final do box*/
     font-family: "Noto Sans", sans-serif;
+    outline-color: var(--cor-azul);
 
 }
 
@@ -68,6 +69,9 @@ h1 {
     /*Opacidade*/
 
 }
+
+
+
 
 /*formularip*/
 .formulario-botao-azul {
@@ -95,6 +99,7 @@ h1 {
     font-size: var(--tamanho-font-sm);
     color: var(--cor-preto);
     font-weight: 600;
+   
 }
 
 .estilo-formulario{
@@ -102,6 +107,7 @@ h1 {
   
     background-color: var(--cor-azul-claro);
     border: var(--border);
+  
   
    
   
@@ -113,7 +119,10 @@ h1 {
 
  #labell{
     display: inline-block;
-    width: 200px;
+    width: 150px;
+    height: 35px;
+    border-radius: var(--border-arredondamento);
+    border: none;
     color: var(--cor-branco);
     background-color: var(--cor-azul-escuro);
     text-align: center;
@@ -158,7 +167,7 @@ h1 {
     align-items: center;
 }
 
-#foto-perfil {
+.foto-perfil {
     width: 40px;
     height: 40px;
     object-fit: cover;
