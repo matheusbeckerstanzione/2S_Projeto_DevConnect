@@ -30,7 +30,7 @@
     --cor-azul-escuro: #011638;
 
     /*estou falando da borda*/
-    --border: 3px solid var(--cor-preto);
+    --border: 2px solid var(--cor-preto);
     --border-arredondamento: 2px;
 
     /*tamanho da font*/
